@@ -1,0 +1,146 @@
+---
+title: Introduction to R Programming Environment
+author: Vikram E. Chhatre 
+date: January 31, 2020
+
+output:
+  html_document:
+    css: avenir-white.css
+    toc: true
+    toc_depth: 3
+---
+
+
+#### Wyoming INBRE Bioinformatics Core | [ibcsite.uwyo.online](https://ibc.uwyo.online) | [github.com/wyoibc](https://github.com/wyoibc)
+
+
+<br>
+
+## Note: 
+
+Parts of this document contain detailed instructions.  This is for reference only - something you can use if you **later** revisit this tutorial.  During the workshop, this author will provide verbal instructions.  You will primarily use this guide for the R syntax (i.e. code) it provides.
+
+
+<br><br>
+
+
+## Table of Contents
+
+- [1. What is R?](#what-is-r)
+
+- [2. What is R-Studio](#what-is-r-studio)
+
+- [3. Getting Started](#getting-started)
+
+<br>
+
+
+## 1. What is R?
+
+R is an open source, statistical data analysis and visualization program.  It is also a computer programming language. There are many proprietary software programs that can be used for statistical data analysis. For example ``SAS`` and ``MATLAB``.  Most such programs cost money, even though it may or may not go out of your own pocket.  These programs are also closed-source meaning that the computer code that is needed to make these programs work is usually a closely held secret and the end users are not privy to it.  This stifles innovation.
+
+In contrast, the entire R programming language is open source. Scientists and programmers believe that this allows for and encourages further innovation.  Because the code is freely available to anyone, it is constantly being modified and improved.  Examples include adding new functionality and removing bugs.  You may not do the same with closed source programs.
+
+When you install the R distribution on your computer, it comes with a range of basic functions, enough to perform basic but wide ranging statistical analyses (think ANOVA, T-test etc.) and then visualize the results (think histograms, scatterplots, barplots etc.).  This suite of functions is together called the base-R distribution.  The latest version of R is 3.6.2.  Each version also gets a name.  Version 3.6.2 is named ``Dark and Stormy Night``. ``R`` was developed by the ``R Foundation for Statistical Computing`` located at [https://r-project.org](https://r-project.org), which provides a great deal of information related to R. 
+
+<br><br>
+
+
+## 2. What is R-Studio?
+
+In it's most simplistic form, R can be run through a termianl which provides the commandline interface.  Simply type ``r`` on either Linux, Macintosh or Windows inside a terminal (``CMD`` program in Windows) and R will launch. 
+
+<center>
+<img src="rterminal.png" alt="R inside Terminal" width="600"/>
+</center>
+
+However, not everyone is fond of commandline interfaces.  R-Studio exists as a interface bridge between R and you. But that's not the only thing it does.  It is an extremely feature rich GUI program that brings you enhanced functionality to use R.  
+
+If you think of R as the backbone then R-Studio provides a graphical user interface to interact with that backbone. When you launch R-Studio, it automatically detects the R software installed on your computer and interfaces with it.  Let's take a look at the R interface to become familiar with it.
+
+<br>
+<center>
+<img src="rstudio.png" alt="R Studio Interface" width="800"/>
+</center>
+<br>   
+
+Much of the work you will do will do will happen in the two left panes of R-Studio.  These are 
+
+- ``SOURCE`` which is where you will write your R commands before executing them and 
+
+- ``CONSOLE`` where the execution happens.  The console is the same thing as running R in terminal.  
+
+You can always type commands directly in the console without writing them in the source first.  This allows you to test commands out.  When your workflow begins to get more complex, the source comes in handy.
+
+You will get the hang of R-Studio once we start working through it.  The author will explain more features as they become relevant for the task at hand.
+
+<br><br>
+
+
+## 3. Getting Started
+
+We will start with very simple tasks and build on that.  So that by the end of the day you will have a better idea of what R is capable of.
+
+
+<br>
+
+### 3.1 R as Calculator
+
+At a very basic level, R can be used as a calculator, both simple and scientific. When performing calculations, basic rules of Maths apply i.e. PEMDAS
+
+- Products before Exponents
+- Then Exponents
+- Multiply and divide before you add or substract
+
+
+Let's try some exercises:
+
+```r
+
+489 * 20
+
+5222/40.78
+
+(32*8) + (1000/5.2)
+
+log(7)
+
+log10(7)
+
+550^2
+
+sqrt(302500)
+
+```
+
+
+Here are the outcomes:
+
+```r
+
+489 * 20
+[1] 9780
+
+5222/40.78
+[1] 128.053
+
+(32*8) + (1000/5.2)
+[1] 448.3077
+
+log(7)
+[1] 1.94591
+
+log10(7)
+[1] 0.845098
+
+550^2
+[1] 302500
+
+sqrt(302500)
+[1] 550
+
+```
+
+
+
+
